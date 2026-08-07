@@ -135,8 +135,10 @@ export const projects: Project[] = [
     year: "2026",
     isPrivate: true,
     tags: [".NET 8", "SQL Server / T-SQL", "React", "TypeScript", "Azure", "MercadoLibre API"],
-    cover: "/bluesoft/stock.jpg",
+    cover: "/bluesoft/franquicias-pedido.jpg",
     gallery: [
+      { src: "/bluesoft/franquicias-pedido.jpg", alt: "Nuevo pedido de franquicia — importación TXT/Excel, RFID y letra X" },
+      { src: "/bluesoft/franquicias-devoluciones.jpg", alt: "Devoluciones de franquicias — control de mercadería y notas de crédito" },
       { src: "/bluesoft/stock.jpg", alt: "Panel de control del módulo de Stock (blueSoft ERP)" },
       { src: "/bluesoft/sucursales.jpg", alt: "Dashboard de sucursales — arquitectura multiempresa" },
     ],
@@ -216,6 +218,10 @@ export const projects: Project[] = [
     isPrivate: true,
     tags: [".NET", "C#", "ASP.NET MVC", "SQL Server", "SharePoint", "Azure"],
     cover: "/ypf/home.jpg",
+    gallery: [
+      { src: "/ypf/home.jpg", alt: "Home del sitio corporativo de YPF Luz" },
+      { src: "/ypf/novedades.jpg", alt: "Sección de novedades del sitio de YPF Luz" },
+    ],
     content: {
       es: {
         title: "Plataforma web YPF Luz",
