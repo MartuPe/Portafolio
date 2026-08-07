@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV — Martina Abril Perrone</title>
+<style>
+  :root{ --ink:#20272f; --soft:#4b5560; --muted:#6a7480; --line:#b9c0c9; --bg:#ffffff; }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:#e9edf1;color:var(--ink);
+    font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;font-size:10pt;line-height:1.4;}
+  .page{max-width:830px;margin:22px auto;background:var(--bg);padding:34px 40px 40px;
+    box-shadow:0 2px 14px rgba(0,0,0,.10);}
+  /* header */
+  h1{text-align:center;font-size:22pt;font-weight:800;letter-spacing:2.5px;margin:0 0 8px;color:#141a20;}
+  .rule{border:0;border-top:1.6px solid #2b333c;margin:8px 0 12px;}
+  .contact{display:flex;justify-content:center;gap:46px;font-size:9pt;color:var(--soft);}
+  .contact div{display:flex;flex-direction:column;gap:2px;}
+  .contact a{color:var(--soft);text-decoration:none;}
+  .contact b{color:var(--ink);font-weight:600;}
+  /* profile */
+  .perfil-h{text-align:center;font-size:10.5pt;font-weight:800;letter-spacing:1.4px;
+    text-transform:uppercase;color:#1b2733;margin:14px 0 7px;}
+  .perfil{ text-align:justify;font-size:9.3pt;color:#333c46;margin:0;}
+  /* columns */
+  .cols{display:flex;gap:28px;margin-top:14px;}
+  .left{flex:0 0 33%;}
+  .right{flex:1;min-width:0;}
+  .sh{font-size:10.5pt;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#1b2733;
+    border-bottom:1.5px solid var(--line);padding-bottom:3px;margin:16px 0 8px;}
+  .left .sh:first-child,.right .sh:first-child{margin-top:0;}
+  /* education / left items */
+  .edu{margin:0 0 9px;break-inside:avoid;}
+  .edu .t{font-weight:700;font-size:9pt;text-transform:uppercase;letter-spacing:.3px;}
+  .edu .s{font-size:8.7pt;color:var(--muted);}
+  /* skills */
+  .sg{font-size:8.5pt;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:#2b3542;margin:10px 0 2px;}
+  .sk{font-size:8.5pt;color:#464f59;line-height:1.4;margin:0 0 2px;}
+  /* jobs */
+  .job{margin:0 0 13px;break-inside:avoid;}
+  .job .r{font-weight:800;font-size:10pt;text-transform:uppercase;letter-spacing:.3px;color:#1b2733;}
+  .job .o{font-size:9pt;color:var(--soft);margin:1px 0 1px;}
+  .job .o b{color:var(--ink);}
+  .award{font-size:8.8pt;color:#3a434e;margin:3px 0;}
+  .lede{font-size:9pt;color:#333c46;margin:5px 0 4px;text-align:justify;}
+  .caps{font-size:8.4pt;font-weight:700;letter-spacing:.4px;color:#3a434e;margin:6px 0 2px;text-transform:uppercase;}
+  ul{margin:3px 0 0;padding-left:15px;}
+  li{margin:2.5px 0;font-size:9pt;color:#333c46;}
+  .stack{font-size:8.5pt;color:var(--muted);margin-top:5px;}
+  .stack b{color:var(--ink);}
+  .lang{font-size:9pt;}
+  @media print{
+    html,body{background:#fff;font-size:9.4pt;}
+    .page{box-shadow:none;margin:0;max-width:none;padding:12mm 13mm;}
+    a{color:var(--soft);}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>MARTINA ABRIL PERRONE</h1>
+    <hr class="rule">
+    <div class="contact">
+      <div>
+        <span><b>Email:</b> marty4009@gmail.com</span>
+        <span><b>Celular:</b> +54 11 3403-0066</span>
+        <span><b>Ubicación:</b> Buenos Aires, Argentina</span>
+      </div>
+      <div>
+        <span><b>GitHub:</b> <a href="https://github.com/MartuPe">github.com/MartuPe</a></span>
+        <span><b>LinkedIn:</b> <a href="https://linkedin.com/in/martina-perrone-a36811288">…/martina-perrone-a36811288</a></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="perfil-h">Perfil Profesional</div>
+  <p class="perfil">Desarrolladora <b>Full Stack orientada a Backend .NET</b>, con experiencia en arquitectura limpia,
+  diseño de APIs REST y despliegue cloud. Especializada en el ecosistema Microsoft (.NET 8, C#, Azure), con capacidad
+  demostrada para liderar el desarrollo backend de proyectos complejos desde el diseño arquitectónico hasta producción.
+  Experiencia en desarrollo full-stack, integración de servicios externos (MercadoLibre, blockchain, OCR, notificaciones
+  push), bases de datos relacionales y metodologías ágiles. Perfil técnico sólido con enfoque en escalabilidad, testing automatizado y mejores prácticas de desarrollo.</p>
+
+  <div class="cols">
+    <!-- ============ LEFT ============ -->
+    <div class="left">
+
+      <div class="sh">Educación</div>
+      <div class="edu">
+        <div class="t">Licenciatura en Gestión de la Tecnología</div>
+        <div class="s">Universidad Nacional de La Matanza (UNLaM) · abr. 2026 – Actualidad</div>
+      </div>
+      <div class="edu">
+        <div class="t">Tecnicatura en Desarrollo Web</div>
+        <div class="s">Universidad Nacional de La Matanza (UNLaM) · 2023 – 2025</div>
+      </div>
+      <div class="edu">
+        <div class="t">Bachiller en Economía y Administración</div>
+        <div class="s">Instituto Educacional Almafuerte · 2017 – 2022</div>
+      </div>
+
+      <div class="sh">Habilidades Técnicas</div>
+
+      <div class="sg">Backend &amp; Frameworks</div>
+      <p class="sk">.NET 8 / .NET Core / .NET Framework · C# (POO) · ASP.NET Core Web API · ASP.NET MVC · Entity Framework Core · LINQ</p>
+
+      <div class="sg">Arquitectura &amp; Patrones</div>
+      <p class="sk">Clean Architecture (Domain, Application, Infrastructure) · Repository &amp; Unit of Work · Dependency Injection / IoC · SOLID · DDD (conceptos) · Multi-tenant Architecture</p>
+
+      <div class="sg">Bases de Datos</div>
+      <p class="sk">SQL Server (T-SQL, stored procedures, índices) · Azure SQL Database · MySQL · Diseño y normalización de esquemas · EF Code First Migrations · Diagramas Entidad-Relación (DER)</p>
+
+      <div class="sg">Cloud &amp; DevOps</div>
+      <p class="sk">Microsoft Azure (App Service, SQL Database, Storage, Document Intelligence) · CI/CD con GitHub Actions · Azure DevOps (Boards, Repos, Pipelines) · Git · branching strategies</p>
+
+      <div class="sg">Testing &amp; Calidad</div>
+      <p class="sk">xUnit · Moq · Coverlet · ReportGenerator · Integration Testing · TDD · pruebas unitarias y de integración</p>
+
+      <div class="sg">APIs &amp; Integraciones</div>
+      <p class="sk">RESTful APIs · JSON / XML · Swagger / OpenAPI · Postman · OAuth 2.0 / JWT · MercadoLibre API · Mercado Pago API · Firebase Cloud Messaging · SignalR · WebRTC · Blockchain (Polygon / Ethereum)</p>
+
+      <div class="sg">Frontend</div>
+      <p class="sk">React · TypeScript · JavaScript (ES6+) · HTML5 · CSS3 · Bootstrap 4/5 · Diseño Responsivo</p>
+
+      <div class="sg">Herramientas</div>
+      <p class="sk">Visual Studio 2022 / VS Code · SSMS · Git / GitHub / Azure Repos · Postman / Swagger UI · NuGet · Azure Portal / Kudu Console</p>
+
+      <div class="sg">Metodologías &amp; Soft Skills</div>
+      <p class="sk">Scrum / Metodologías Ágiles · Análisis de Requerimientos · Documentación Técnica / UML · Trabajo en equipo · Resolución de problemas · Autoaprendizaje continuo</p>
+
+      <div class="sg">Otros Conocimientos</div>
+      <p class="sk">SharePoint · OCR · Principios de Seguridad Web (HTTPS, SSL/TLS, CORS, Middleware)</p>
+
+    </div>
+
+    <!-- ============ RIGHT ============ -->
+    <div class="right">
+
+      <div class="sh">Experiencia Laboral</div>
+
+      <div class="job">
+        <div class="r">Desarrolladora Full Stack — orientada a Backend .NET</div>
+        <div class="o"><b>Qreative SAS</b> · nov. 2025 – ago. 2026 · Ecosistema blueSoft (ERP/POS para retail textil)</div>
+        <p class="lede">API central en ASP.NET Core 8 + SQL Server consumida por ~28 aplicaciones web, con arquitectura
+        multiempresa (una base de datos por cliente) y despliegue automático en Azure. Trabajo en equipo bajo dirección de
+        un líder técnico, con ownership completo de varios módulos.</p>
+        <div class="caps">Logros técnicos clave</div>
+        <ul>
+          <li>Diseñé, desarrollé e implementé <b>de punta a punta (backend + frontend) el módulo de Franquicias</b>: pedidos por sucursal, cierre por etapas, cuenta corriente, facturación según letra/IVA, notas de crédito con precio editable y circuito completo de devoluciones a fábrica con control de estados, RFID y TXT.</li>
+          <li>Construí el <b>circuito de Cierre de Caja end-to-end</b> (endpoints REST, stored procedures, detalle de transacciones, anulación y validaciones de negocio con logging).</li>
+          <li>Escribí y optimicé <b>decenas de stored procedures en SQL Server (T-SQL)</b>: lógica financiera (cuenta corriente, saldos, arqueo), consultas paginadas, operaciones masivas y modelado de datos (relación N:N Cajas↔Sucursales).</li>
+          <li>Desarrollé la <b>integración con la API de MercadoLibre</b>: publicación de productos con y sin variantes, equivalencia de colores, guías de talle por dominio/género, sincronización de estado y manejo de errores con feedback al frontend.</li>
+          <li>Implementé el <b>CRUD de Productos</b> con transacciones atómicas sobre múltiples tablas (costos, precios por lista, colores, imágenes, unidades) y modelé <b>Órdenes de Producción y de Proceso</b> (curva multicolor, arquetipos y componentes de costo, cortes).</li>
+          <li>Configuré <b>testing con xUnit y Moq</b> (pruebas unitarias y de integración) con entorno de datos en <b>Docker</b>, y reforcé la <b>seguridad</b> migrando claves sensibles (connection strings, JWT) a user-secrets fuera del repositorio.</li>
+          <li>Aporté <b>más de 100 PRs en 8 repositorios</b>, respetando retrocompatibilidad de la API (contrato OpenAPI versionado) y una política de migraciones de BD idempotentes para no romper apps en producción.</li>
+          <li>Desarrollé interfaces en <b>React + TypeScript</b> para las apps Cajero, Stock, Configuración y MisClientes.</li>
+        </ul>
+        <div class="stack"><b>Stack:</b> .NET 8 · C# · ASP.NET Core Web API · SQL Server / T-SQL · Entity Framework · React · TypeScript · Azure · GitHub Actions · xUnit · Moq · Docker · JWT · OpenAPI · MercadoLibre API</div>
+      </div>
+
+      <div class="job">
+        <div class="r">Desarrolladora .NET</div>
+        <div class="o"><b>Circo Studio</b> — Empresa de desarrollo de software · nov. 2024 – nov. 2025 · Polo Tecnológico, La Matanza, Buenos Aires</div>
+        <p class="lede">Desarrollo y mantenimiento de la plataforma web corporativa para <b>YPF Luz</b>, con soluciones tanto en
+        backend (.NET, C#) como en frontend (HTML/CSS/JavaScript/Bootstrap).</p>
+        <ul>
+          <li>Desarrollo <b>backend en C# / .NET y ASP.NET MVC</b>: lógica de negocio, APIs REST y conexión con SQL Server.</li>
+          <li>Desarrollo <b>frontend</b> con HTML, CSS, Bootstrap y JavaScript aplicando diseño responsivo.</li>
+          <li>Ciclo completo de desarrollo: análisis de requerimientos, diseño técnico, testing y despliegue; documentación técnica y minutas de reuniones.</li>
+          <li>Listas y workflows en <b>SharePoint</b>; despliegue y monitoreo en <b>Azure</b>; optimización de consultas SQL; resolución de incidencias en producción.</li>
+          <li>Control de versiones con <b>Git y Azure DevOps</b>, trabajo ágil (Scrum) y code reviews.</li>
+        </ul>
+        <div class="stack"><b>Stack:</b> .NET · C# · ASP.NET MVC · SQL Server · JavaScript · Bootstrap · SharePoint · Azure · Azure DevOps · Git</div>
+      </div>
+
+      <div class="sh">Proyecto Destacado</div>
+      <div class="job">
+        <div class="r">FORARIA — Plataforma de Gestión de Consorcios</div>
+        <div class="o"><b>UNLaM</b> · Sep 2025 – Dic 2025 · Backend Lead Developer · Equipo de 8 (4 backend .NET + 4 frontend React)</div>
+        <div class="award">🏆 <b>Reconocimiento:</b> Mejor Proyecto en Transferencia Tecnológica — ExpoProyecto UNLaM 2025</div>
+        <p class="lede">Plataforma SaaS multi-tenant para la digitalización de la administración de consorcios. Lideré el diseño e
+        implementación completa del backend siguiendo Clean Architecture y mejores prácticas de desarrollo empresarial.</p>
+        <ul>
+          <li>Arquitectura backend escalable con <b>Clean Architecture (5 capas)</b> y <b>41 casos de uso en 16 épicas</b>.</li>
+          <li>Autenticación/autorización con <b>JWT + refresh tokens</b>, roles jerárquicos y contexto <b>multi-tenant</b> (Query Filters en EF para evitar cross-tenant data leakage).</li>
+          <li><b>69,6% de cobertura de código</b> (branch coverage) con xUnit, Moq y Coverlet; despliegue en Azure con <b>CI/CD en GitHub Actions</b>.</li>
+          <li>Integraciones: <b>notarización blockchain en Polygon</b>, <b>OCR con Azure Document Intelligence</b>, <b>SignalR</b> (tiempo real) y <b>WebRTC</b> (videollamadas).</li>
+        </ul>
+        <div class="stack"><b>GitHub:</b> github.com/TomasPezzano/Foraria-BackEnd</div>
+      </div>
+
+      <div class="sh">Idiomas</div>
+      <p class="lang"><b>Español</b> — Nativo &nbsp;·&nbsp; <b>Inglés</b> — Intermedio (B2), lectura de documentación técnica</p>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
