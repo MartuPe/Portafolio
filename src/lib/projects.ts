@@ -135,6 +135,11 @@ export const projects: Project[] = [
     year: "2026",
     isPrivate: true,
     tags: [".NET 8", "SQL Server / T-SQL", "React", "TypeScript", "Azure", "MercadoLibre API"],
+    cover: "/bluesoft/stock.jpg",
+    gallery: [
+      { src: "/bluesoft/stock.jpg", alt: "Panel de control del módulo de Stock (blueSoft ERP)" },
+      { src: "/bluesoft/sucursales.jpg", alt: "Dashboard de sucursales — arquitectura multiempresa" },
+    ],
     content: {
       es: {
         title: "blueSoft — Ecosistema ERP/POS",
@@ -210,6 +215,7 @@ export const projects: Project[] = [
     year: "2025",
     isPrivate: true,
     tags: [".NET", "C#", "ASP.NET MVC", "SQL Server", "SharePoint", "Azure"],
+    cover: "/ypf/home.jpg",
     content: {
       es: {
         title: "Plataforma web YPF Luz",

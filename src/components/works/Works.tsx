@@ -22,7 +22,7 @@ function ProjectCard({ project, onOpen }: { project: Project; onOpen: () => void
       <ProjectCover
         project={project}
         title={c.title}
-        className={featured ? "aspect-[16/10] md:aspect-[16/7]" : "aspect-[4/3]"}
+        className={featured ? "aspect-[16/10] md:aspect-[16/7]" : "aspect-[16/10]"}
       />
       <div className="mt-4 flex items-start justify-between gap-4">
         <div>
