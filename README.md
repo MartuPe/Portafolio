@@ -42,13 +42,19 @@ Mientras el `quote` esté vacío, la tarjeta y el link "Recomendaciones" del men
 ## Desplegar en Vercel
 
 **Opción A — desde GitHub (recomendada):**
-1. Subí este proyecto a un repo (por ejemplo `MartuPe/portfolio`).
-2. En https://vercel.com → *Add New Project* → importá el repo.
-3. Configuración:
-   - **Root Directory:** `web`
+Este repo git ya está inicializado dentro de `web/` (o sea, la raíz del repo es esta carpeta).
+1. Creá un repo vacío en GitHub (por ejemplo `MartuPe/portfolio`), **sin** README ni .gitignore.
+2. Conectalo y subí:
+   ```bash
+   git remote add origin https://github.com/MartuPe/portfolio.git
+   git push -u origin main
+   ```
+3. En https://vercel.com → *Add New Project* → importá el repo.
+4. Configuración:
+   - **Root Directory:** dejar por defecto (`./`)
    - Framework Preset: *Vite* (se detecta solo)
    - Build Command: `npm run build` · Output Directory: `dist`
-4. Deploy. Vercel te da una URL `*.vercel.app`. Después podés conectar tu dominio propio.
+5. Deploy. Vercel te da una URL `*.vercel.app`. Después podés conectar tu dominio propio.
 
 **Opción B — desde la terminal:**
 ```bash
