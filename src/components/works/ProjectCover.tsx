@@ -19,20 +19,16 @@ function Placeholder({ project, title }: { project: Project; title: string }) {
       className="relative flex h-full w-full flex-col justify-between overflow-hidden rounded-lg border border-border p-6"
       style={{ background: `linear-gradient(150deg, ${theme.from}, ${theme.to})` }}
     >
-      {/* soft radial highlight */}
       <div
         className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full opacity-40 blur-2xl"
         style={{ background: `radial-gradient(circle, ${theme.accent}, transparent 70%)` }}
       />
-      {/* watermark initial */}
       <span
-        className="font-serif-italic pointer-events-none absolute -bottom-10 right-2 text-[11rem] leading-none opacity-10"
-        style={{ color: "#fff" }}
+        className="font-serif-italic pointer-events-none absolute -bottom-10 right-2 text-[11rem] leading-none text-white opacity-10"
         aria-hidden
       >
         {initial}
       </span>
-
       <span className="relative text-xs uppercase tracking-[0.2em] text-white/60">
         {project.year}
       </span>
@@ -44,7 +40,40 @@ function Placeholder({ project, title }: { project: Project; title: string }) {
   );
 }
 
-/** Portada de un proyecto: usa la imagen si carga; si no, un placeholder elegante. */
+/** Mockup de ventana de navegador que muestra la captura completa (sin recortar). */
+function BrowserFrame({
+  src,
+  alt,
+  onError,
+}: {
+  src: string;
+  alt: string;
+  onError: () => void;
+}) {
+  return (
+    <div className="flex h-full w-full flex-col overflow-hidden rounded-lg border border-border bg-surface shadow-sm">
+      {/* barra superior */}
+      <div className="flex items-center gap-1.5 border-b border-border bg-muted px-3 py-2">
+        <span className="h-2.5 w-2.5 rounded-full bg-[#f96058]" />
+        <span className="h-2.5 w-2.5 rounded-full bg-[#fbbe3c]" />
+        <span className="h-2.5 w-2.5 rounded-full bg-[#3fc65c]" />
+        <div className="mx-auto h-3.5 w-1/2 rounded-full bg-background/70" />
+      </div>
+      {/* captura completa, anclada arriba */}
+      <div className="flex-1 overflow-hidden bg-white">
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          onError={onError}
+          className="h-full w-full object-contain object-top transition-transform duration-700 group-hover:scale-[1.02]"
+        />
+      </div>
+    </div>
+  );
+}
+
+/** Portada de un proyecto: usa la imagen (enmarcada) si carga; si no, un placeholder elegante. */
 export function ProjectCover({
   project,
   title,
@@ -65,14 +94,8 @@ export function ProjectCover({
   }
 
   return (
-    <div className={`overflow-hidden rounded-lg border border-border ${className}`}>
-      <img
-        src={project.cover}
-        alt={title}
-        loading="lazy"
-        onError={() => setFailed(true)}
-        className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
-      />
+    <div className={className}>
+      <BrowserFrame src={project.cover} alt={title} onError={() => setFailed(true)} />
     </div>
   );
 }
