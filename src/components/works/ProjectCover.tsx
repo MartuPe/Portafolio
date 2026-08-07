@@ -7,7 +7,6 @@ const themes: Record<string, Theme> = {
   foraria: { from: "oklch(0.34 0.06 250)", to: "oklch(0.2 0.04 260)", accent: "oklch(0.75 0.13 250)" },
   bluesoft: { from: "oklch(0.42 0.1 245)", to: "oklch(0.24 0.07 255)", accent: "oklch(0.78 0.13 245)" },
   "ypf-luz": { from: "oklch(0.5 0.13 150)", to: "oklch(0.26 0.08 160)", accent: "oklch(0.82 0.16 150)" },
-  "casino-crusaders": { from: "oklch(0.44 0.11 25)", to: "oklch(0.24 0.07 30)", accent: "oklch(0.8 0.14 30)" },
 };
 
 function Placeholder({ project, title }: { project: Project; title: string }) {

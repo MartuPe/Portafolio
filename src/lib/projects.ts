@@ -281,49 +281,4 @@ export const projects: Project[] = [
       },
     },
   },
-  {
-    id: "casino-crusaders",
-    number: "04",
-    year: "2025",
-    tags: ["C#", ".NET", "OOP"],
-    links: {
-      code: "https://github.com/MartuPe/CasinoCrusaders",
-    },
-    content: {
-      es: {
-        title: "Casino Crusaders",
-        client: "Proyecto personal / académico",
-        date: "2025",
-        role: "Desarrolladora",
-        service: "Desarrollo en C# / .NET",
-        brief: "Proyecto en C# que practica programación orientada a objetos y lógica de juego.",
-        summary:
-          "Proyecto desarrollado en C# / .NET donde apliqué programación orientada a objetos, modelado de clases y lógica de negocio. Un espacio para experimentar y reforzar fundamentos fuera del ámbito laboral.",
-        sections: [
-          {
-            title: "Sobre el proyecto",
-            content:
-              "Desarrollo en C# aplicando POO, separación de responsabilidades y buenas prácticas. Código disponible públicamente en GitHub.",
-          },
-        ],
-      },
-      en: {
-        title: "Casino Crusaders",
-        client: "Personal / academic project",
-        date: "2025",
-        role: "Developer",
-        service: "C# / .NET development",
-        brief: "A C# project practicing object-oriented programming and game logic.",
-        summary:
-          "A C# / .NET project where I applied object-oriented programming, class modeling and business logic. A space to experiment and reinforce fundamentals outside of work.",
-        sections: [
-          {
-            title: "About the project",
-            content:
-              "Built in C# applying OOP, separation of concerns and best practices. Source code publicly available on GitHub.",
-          },
-        ],
-      },
-    },
-  },
 ];
