@@ -32,7 +32,7 @@ export function Hero() {
               className="mt-6 max-w-md text-base text-muted-foreground md:text-lg"
             >
               {t.hero.intro}{" "}
-              <span className="font-serif-italic text-foreground">{t.hero.introItalic}</span>
+              <span className="font-emphasis text-foreground">{t.hero.introItalic}</span>
               {t.hero.together}
             </motion.p>
             <motion.a

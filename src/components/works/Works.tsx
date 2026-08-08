@@ -64,7 +64,7 @@ export function Works() {
         <div className="mb-12 flex flex-col gap-3">
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
             {t.works.eyebrow}{" "}
-            <span className="font-serif-italic text-foreground normal-case">{t.works.title}</span>
+            <span className="font-emphasis text-foreground normal-case">{t.works.title}</span>
           </p>
           <p className="max-w-xl text-base text-muted-foreground md:text-lg">
             {t.works.description}

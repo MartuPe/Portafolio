@@ -23,7 +23,7 @@ function Placeholder({ project, title }: { project: Project; title: string }) {
         style={{ background: `radial-gradient(circle, ${theme.accent}, transparent 70%)` }}
       />
       <span
-        className="font-serif-italic pointer-events-none absolute -bottom-10 right-2 text-[11rem] leading-none text-white opacity-10"
+        className="font-emphasis pointer-events-none absolute -bottom-10 right-2 text-[11rem] leading-none text-white opacity-10"
         aria-hidden
       >
         {initial}

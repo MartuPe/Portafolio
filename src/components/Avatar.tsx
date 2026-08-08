@@ -18,7 +18,7 @@ export function Avatar({ alt }: { alt: string }) {
         role="img"
         aria-label={alt}
       >
-        <span className="font-serif-italic text-7xl text-[oklch(0.8_0.13_55)] md:text-8xl">
+        <span className="font-emphasis text-7xl text-[oklch(0.8_0.13_55)] md:text-8xl">
           MP
         </span>
       </div>
