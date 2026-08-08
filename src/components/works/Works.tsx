@@ -25,16 +25,16 @@ function ProjectCard({ project, onOpen }: { project: Project; onOpen: () => void
         className="aspect-[16/10]"
       />
       <div className="mt-4 flex items-start justify-between gap-4">
-        <div>
+        <div className="min-w-0">
           <div className="flex items-center gap-2">
             <span className="text-xs text-muted-foreground">{project.number}</span>
-            <h3 className="font-display text-lg tracking-tight">{c.title}</h3>
             {project.isPrivate && (
               <span className="rounded-full border border-border px-2 py-0.5 text-[10px] uppercase tracking-wider text-muted-foreground">
                 Private
               </span>
             )}
           </div>
+          <h3 className="mt-1.5 font-display text-lg tracking-tight">{c.title}</h3>
           <p className="mt-1 text-sm text-muted-foreground">{c.brief}</p>
           <div className="mt-3 flex flex-wrap gap-1.5">
             {project.tags.slice(0, featured ? 6 : 3).map((tag) => (
@@ -44,7 +44,7 @@ function ProjectCard({ project, onOpen }: { project: Project; onOpen: () => void
             ))}
           </div>
         </div>
-        <span className="mt-1 text-muted-foreground transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+        <span className="mt-1 shrink-0 text-muted-foreground transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
           <ArrowUpRight size={18} />
         </span>
       </div>
