@@ -112,6 +112,15 @@ export const testimonials: Testimonial[] = [
       en: "I worked alongside Martina over the past year on team projects, where she handled the backend with .NET and I handled the frontend. She always met deadlines on time, and her technical documentation is clean and makes teamwork much easier. We're still working together and I recommend her without hesitation.",
     },
   },
+  {
+    name: "David Mamani",
+    title: { es: "Frontend Developer", en: "Frontend Developer" },
+    photo: "/testimonials/david.jpg",
+    quote: {
+      es: "Quiero recomendar a Martina, con quien tuve la oportunidad de trabajar durante varios meses en distintos proyectos freelance y sistemas a medida. Una de las cosas que más destacaría de Martina es su capacidad de adaptación. Su especialidad es .NET, pero siempre mostró mucha predisposición para aprender y trabajar con nuevas tecnologías cuando el proyecto lo requería. Durante el tiempo que trabajamos juntos, siempre fue una persona organizada, proactiva y responsable con su trabajo. Además de su perfil técnico, es una persona muy agradable para trabajar, con buena comunicación y empatía, manteniendo siempre una relación profesional y positiva con el equipo. Mi experiencia trabajando con Martina fue muy buena y considero que es una profesional con mucho potencial, especialmente por sus ganas de aprender y su capacidad para adaptarse a distintos contextos.",
+      en: "I'd like to recommend Martina, with whom I had the opportunity to work for several months on different freelance projects and custom systems. One of the things I'd highlight most about Martina is her adaptability. Her specialty is .NET, but she always showed great willingness to learn and work with new technologies when the project required it. During the time we worked together, she was always organized, proactive and responsible with her work. Beyond her technical profile, she's very pleasant to work with, with good communication and empathy, always keeping a professional and positive relationship with the team. My experience working with Martina was very good and I consider her a professional with a lot of potential, especially for her eagerness to learn and her ability to adapt to different contexts.",
+    },
+  },
 ];
 
 export function isTestimonialReady(item: Testimonial): boolean {
