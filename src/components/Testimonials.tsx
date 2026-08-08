@@ -36,7 +36,7 @@ export function Testimonials() {
               variants={fadeUp}
               className="flex flex-col rounded-2xl border border-border bg-surface p-6"
             >
-              <blockquote className="font-emphasis text-lg leading-relaxed">
+              <blockquote className="text-base font-normal leading-relaxed text-foreground/90">
                 “{item.quote[lang] || item.quote.es || item.quote.en}”
               </blockquote>
               <figcaption className="mt-6 flex items-center justify-between gap-3">
