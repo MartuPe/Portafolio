@@ -34,12 +34,12 @@ export function Testimonials() {
             <motion.figure
               key={item.name}
               variants={fadeUp}
-              className="flex flex-col rounded-2xl border border-border bg-surface p-6"
+              className="flex h-full flex-col rounded-2xl border border-border bg-surface p-6"
             >
               <blockquote className="text-base font-normal leading-relaxed text-foreground/90">
                 “{item.quote[lang] || item.quote.es || item.quote.en}”
               </blockquote>
-              <figcaption className="mt-6 flex items-center justify-between gap-3">
+              <figcaption className="mt-auto flex items-center justify-between gap-3 pt-6">
                 <div className="flex items-center gap-3">
                   {item.photo ? (
                     <img
