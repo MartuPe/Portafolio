@@ -39,10 +39,28 @@ export function Testimonials() {
               <blockquote className="font-serif-italic text-lg leading-relaxed">
                 “{item.quote[lang] || item.quote.es || item.quote.en}”
               </blockquote>
-              <figcaption className="mt-6 flex items-center justify-between">
-                <div>
-                  <p className="text-sm font-medium">{item.name}</p>
-                  <p className="text-xs text-muted-foreground">{item.title[lang]}</p>
+              <figcaption className="mt-6 flex items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  {item.photo ? (
+                    <img
+                      src={item.photo}
+                      alt={item.name}
+                      loading="lazy"
+                      className="h-11 w-11 shrink-0 rounded-full object-cover"
+                    />
+                  ) : (
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-foreground text-sm font-medium text-background">
+                      {item.name
+                        .split(" ")
+                        .map((n) => n[0])
+                        .slice(0, 2)
+                        .join("")}
+                    </span>
+                  )}
+                  <div>
+                    <p className="text-sm font-medium">{item.name}</p>
+                    <p className="text-xs text-muted-foreground">{item.title[lang]}</p>
+                  </div>
                 </div>
                 {item.linkedin && (
                   <a

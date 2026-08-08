@@ -86,23 +86,31 @@ export type Testimonial = {
   quote: Record<Language, string>;
   name: string;
   title: Record<Language, string>;
+  /** Foto en /public (ej. "/testimonials/nombre.jpg"). Si falta, se muestran las iniciales. */
+  photo?: string;
   linkedin?: string;
 };
 
-// TODO Martina: completá el texto de tus 2 recomendaciones de LinkedIn.
+// Recomendaciones de LinkedIn. Para agregar más, copiá un bloque y completá los campos.
 // Mientras "quote" esté vacío, la tarjeta no se muestra.
 export const testimonials: Testimonial[] = [
   {
-    quote: { es: "", en: "" },
-    name: "",
-    title: { es: "Compañero/a de trabajo — Qreative", en: "Coworker — Qreative" },
-    linkedin: "",
+    name: "Mati Querel",
+    title: { es: "Director en Qreative Software", en: "Director at Qreative Software" },
+    photo: "/testimonials/mati.jpg",
+    quote: {
+      es: "Tuve el placer de trabajar con Martina en Qreative Software. El tiempo que compartimos trabajando juntos fue excelente. Encontré en ella a una gran profesional, con muchas ganas de aprender, de aportar valor y, sobre todo, de desarrollar software de calidad. Además, siempre demostró compromiso, responsabilidad y una muy buena predisposición.",
+      en: "I had the pleasure of working with Martina at Qreative Software. The time we spent working together was excellent. I found in her a great professional, eager to learn, to add value and, above all, to build quality software. She also consistently showed commitment, responsibility and a very positive attitude.",
+    },
   },
   {
-    quote: { es: "", en: "" },
-    name: "",
-    title: { es: "Líder técnico — Qreative", en: "Tech Lead — Qreative" },
-    linkedin: "",
+    name: "Teo Demattei",
+    title: { es: "Desarrollador Frontend", en: "Frontend Developer" },
+    photo: "/testimonials/teo.jpg",
+    quote: {
+      es: "Trabajé junto a Martina durante el último año en proyectos de equipo, donde ella se encargó del backend con .NET y yo del frontend. Siempre cumplió los plazos en tiempo y forma, y su documentación técnica es prolija y facilita mucho el trabajo en equipo. Seguimos trabajando juntos y la recomiendo sin dudarlo.",
+      en: "I worked alongside Martina over the past year on team projects, where she handled the backend with .NET and I handled the frontend. She always met deadlines on time, and her technical documentation is clean and makes teamwork much easier. We're still working together and I recommend her without hesitation.",
+    },
   },
 ];
 
