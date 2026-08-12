@@ -121,6 +121,18 @@ export const testimonials: Testimonial[] = [
       en: "I'd like to recommend Martina, with whom I had the opportunity to work for several months on different freelance projects and custom systems. One of the things I'd highlight most about Martina is her adaptability. Her specialty is .NET, but she always showed great willingness to learn and work with new technologies when the project required it. During the time we worked together, she was always organized, proactive and responsible with her work. Beyond her technical profile, she's very pleasant to work with, with good communication and empathy, always keeping a professional and positive relationship with the team. My experience working with Martina was very good and I consider her a professional with a lot of potential, especially for her eagerness to learn and her ability to adapt to different contexts.",
     },
   },
+  {
+    name: "Juan Lalla",
+    title: {
+      es: "Software Engineer en Qreative · Docente en Comunidad IT",
+      en: "Software Engineer at Qreative · Instructor at Comunidad IT",
+    },
+    photo: "/testimonials/juan.jpg",
+    quote: {
+      es: "Trabajé junto a Martina en Qreative Software y puedo destacar su gran compromiso, capacidad de resolución y responsabilidad en cada tarea. Es una excelente compañera de equipo, siempre dispuesta a colaborar, aprender y encontrar nuevas formas de mejorar su trabajo. Martina es una profesional con muchísimo potencial, que demuestra un crecimiento constante y una actitud muy positiva frente a cada desafío. La recomiendo ampliamente para cualquier proyecto o equipo que valore el compromiso, la colaboración y las ganas de superarse.",
+      en: "I worked with Martina at Qreative Software and I can highlight her great commitment, problem-solving skills and responsibility in every task. She's an excellent team player, always willing to collaborate, learn and find new ways to improve her work. Martina is a professional with enormous potential, showing constant growth and a very positive attitude toward every challenge. I highly recommend her for any project or team that values commitment, collaboration and the drive to improve.",
+    },
+  },
 ];
 
 export function isTestimonialReady(item: Testimonial): boolean {
